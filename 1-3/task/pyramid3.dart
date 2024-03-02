@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'dart:math';
 
 void main()
 {
@@ -6,7 +7,7 @@ void main()
   {
     for(int j=1;j<=i;j++)
     {
-      stdout.write('${i * 2}');
+      stdout.write(pow(2, i));
     }
     print('');
   }

@@ -84,7 +84,7 @@ Ans. No, we can't override a superclass static method.
 Ans. A subclass static method can't hide superclass instance method.
 
 44. Can a superclass access subclass member?
-Ans. 
+Ans. Yes, a superclass can access subclass member. 
 
 45.Difference between object oriented and object based language.
 Ans.object-based languages need not support inheritance, but those that do are also termed object-oriented.

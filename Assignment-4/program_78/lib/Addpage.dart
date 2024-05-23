@@ -32,7 +32,7 @@ class _AddPageState extends State<AddPage> {
                   cursorColor: Colors.white,
                   controller: _name,
                   decoration: InputDecoration(
-                    label: Text("Enter name",style: TextStyle(color: Colors.white,fontSize: 24)),
+                    label: Text("Enter name",style: TextStyle(fontSize: 24)),
                     border: OutlineInputBorder(),
                     hintText: "Enter name"
                   ),

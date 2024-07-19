@@ -21,6 +21,14 @@ class _DashboardState extends State<Dashboard> {
     initial();
   }
 
+  void initial()async
+  {
+    sharedPreferences = await SharedPreferences.getInstance();
+    setState(() {
+      email = sharedPreferences.getString('myemail')!;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,14 +40,22 @@ class _DashboardState extends State<Dashboard> {
           Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => HomePage()));
         }, icon: Icon(Icons.logout)),
       ],),
+
+      body: Center(
+        child: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.all(20),
+            child: Column(
+              children:
+              [
+                 
+              ],
+            ),
+          ),
+        ),
+      ),
     );
   }
 
-  void initial()async
-  {
-    sharedPreferences = await SharedPreferences.getInstance();
-    setState(() {
-      email = sharedPreferences.getString('myemail')!;
-    });
-  }
+
 }
